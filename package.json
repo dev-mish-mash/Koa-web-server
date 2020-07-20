@@ -1,0 +1,12 @@
+{
+  "name": "koa-web-server",
+  "version": "1.0.0",
+  "description": "\"Simple koa web server\"",
+  "main": "index.js",
+  "repository": "https://github.com/dev-mish-mash/Koa-web-server.git",
+  "author": "HoseungShin <nwdt3309@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "koa": "^2.13.0"
+  }
+}
