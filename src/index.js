@@ -13,7 +13,7 @@ app.use(router.allowedMethods());
 
 const app = new Koa();
 
-
+// 추후 추가구현
 app.listen(4000, () => {
     console.log('koa server is listening to port 4000');
 })
