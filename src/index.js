@@ -9,6 +9,9 @@ router.get('/', (ctx, next) => {
 })
 
 
+router.get('/about', (ctx, next) => {
+    ctx.body = '소개';
+});
 
 router.get('/about/:name', (ctx, next) => {
     const { name } = ctx.params;
