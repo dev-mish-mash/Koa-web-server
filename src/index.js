@@ -18,6 +18,12 @@ router.get('/about/:name', (ctx, next) => {
     ctx.body = name + '의 소개';
 })
 
+router.get('/post', (ctx, next) => {
+    const { id } = ctx.request.query;
+    if (id) {
+        ctx.
+    }
+})
 app.use(router.routes());
 app.use(router.allowedMethods());
 
