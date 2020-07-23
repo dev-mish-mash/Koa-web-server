@@ -8,6 +8,13 @@ router.get('/', (ctx, next) => {
     ctx.body = '홈';
 })
 
+
+
+router.get('/about/:name', (ctx, next) => {
+    const { name } = ctx.params;
+    ctx.body = name + '의 소개';
+})
+
 app.use(router.routes());
 app.use(router.allowedMethods());
 
