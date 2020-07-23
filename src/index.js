@@ -21,13 +21,14 @@ router.get('/about/:name', (ctx, next) => {
 router.get('/post', (ctx, next) => {
     const { id } = ctx.request.query;
     if (id) {
-        ctx.
+        ctx.body = '포스트 #' + id;
+    } else {
+        ctx.body = '포스트 아이디가 없습니다.';
     }
-})
-app.use(router.routes());
-app.use(router.allowedMethods());
+});
 
-const app = new Koa();
+app.use(router.routes()).use(router.allowedMethods());
+
 
 // 추후 추가구현
 app.listen(4000, () => {
