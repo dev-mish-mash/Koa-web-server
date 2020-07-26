@@ -9,9 +9,9 @@ books.post('/', booksCtrl.create);
 
 books.delete('/', booksCtrl.delete);
 
-books.put('/', booksCtrl.replace);
+books.put('/:id', booksCtrl.replace);
 
-books.patch('/', booksCtrl.update);
+books.patch('/:id', booksCtrl.update);
 
 books.get('/:id', booksCtrl.get);
 
