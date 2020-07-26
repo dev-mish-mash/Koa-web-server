@@ -13,4 +13,6 @@ books.put('/', booksCtrl.replace);
 
 books.patch('/', booksCtrl.update);
 
+books.get('/:id', booksCtrl.get);
+
 module.exports = books;
