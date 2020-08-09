@@ -31,7 +31,6 @@ router.use('/api', api.routes());
 
 app.use(router.routes()).use(router.allowedMethods());
 
-// 추후 추가구현
 app.listen(port, () => {
     console.log('koa server is listening to port ' + port);
 })
