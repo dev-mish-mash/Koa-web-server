@@ -25,9 +25,10 @@ mongoose.connect(process.env.MONGO_URI, {
 
 const port = process.env.PORT || 4000;
 
-app.use (bodyParser());
+app.use(bodyParser());
 
 router.use('/api', api.routes());
+
 
 app.use(router.routes()).use(router.allowedMethods());
 
